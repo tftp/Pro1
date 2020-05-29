@@ -9,7 +9,7 @@ Things you may want to cover:
 
 * System dependencies
 
-  ###Установка bootstrap.
+  ### Установка bootstrap.
     Сначала для установки bootstrap я использовал Gemfile в котором прописал
           > gem 'bootstrap', '~> 4.4.1'
 
@@ -23,18 +23,18 @@ Things you may want to cover:
     3. Далее в файл app/config/webpack/environment.js добавил то что требовали, а именно:
 
             ```
-           const { environment } = require('@rails/webpacker')
+             const { environment } = require('@rails/webpacker')
 
-           const webpack = require('webpack')
-           environment.plugins.append('Provide',
-             new webpack.ProvidePlugin({
-               $: 'jquery',
-               jQuery: 'jquery',
-               Popper: ['popper.js', 'default']
-             })
-           )
+             const webpack = require('webpack')
+             environment.plugins.append('Provide',
+               new webpack.ProvidePlugin({
+                 $: 'jquery',
+                 jQuery: 'jquery',
+                 Popper: ['popper.js', 'default']
+               })
+             )
 
-           module.exports = environment
+             module.exports = environment
            ```
 
     4. Далее поступил чуть по другому, переименовал файл app/assets/stylesheets/application.css
