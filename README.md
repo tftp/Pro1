@@ -11,7 +11,7 @@ Things you may want to cover:
 
   ### Установка bootstrap.
     Сначала для установки bootstrap я использовал Gemfile в котором прописал
-          > gem 'bootstrap', '~> 4.4.1'
+          >gem 'bootstrap', '~> 4.4.1'
 
     но это не помогло, далее были предприняты следующие шаги, которые привели
     к успеху:
@@ -35,7 +35,7 @@ Things you may want to cover:
              )
 
              module.exports = environment
-           ```
+            ```
 
     4. Далее поступил чуть по другому, переименовал файл app/assets/stylesheets/application.css
     в app/assets/stylesheets/application.scss и добавил в него:
