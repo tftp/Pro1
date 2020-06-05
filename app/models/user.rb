@@ -9,6 +9,8 @@ class User < ApplicationRecord
           :trackable,
           :confirmable
 
- validates :email, format: { with: /\A\w+@\w+\.[a-z]{2,3}\z/}
+  has_one :profile
+
+  validates :email, format: { with: /\A\w+@\w+\.[a-z]{2,3}\z/}
 
 end
